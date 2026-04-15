@@ -16,6 +16,7 @@ def login():
     if request.method == "POST":
         session["name"] = request.form["name"]
         session["age"] = request.form["age"]
+        session["gender"] = request.form["gender"]
         return redirect("/dashboard")
     return render_template("login.html")
 
