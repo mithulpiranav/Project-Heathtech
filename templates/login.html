@@ -2,17 +2,54 @@
 <html>
 <head>
     <title>Login</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            padding-top: 100px;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0px 0px 10px gray;
+        }
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #4facfe;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body style="text-align:center; font-family:Arial;">
+<body>
 
-<h2>Login</h2>
+<div class="box">
+    <h2>Login</h2>
 
-<form method="POST">
-    <input type="text" name="name" placeholder="Enter Name" required><br><br>
-    <input type="number" name="age" placeholder="Enter Age" required><br><br>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required><br>
 
-    <button type="submit">Continue</button>
-</form>
+        <input type="number" name="age" placeholder="Enter Age" required><br>
+
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <button type="submit">Continue</button>
+    </form>
+</div>
 
 </body>
 </html>
