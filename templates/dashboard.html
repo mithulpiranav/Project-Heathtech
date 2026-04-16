@@ -19,14 +19,12 @@
 </form>
 
 {% if result %}
-    <h3>Glucose Level: {{ result }}</h3>
+    <h3>Glucose Level (est.): {{ glucose }} mg/dL</h3>
     <h3>Calories Burnt: {{ calories_burnt }}</h3>
     <h3>Predicted Burn: {{ predicted_burn }}</h3>
-
     <h3>BMI: {{ bmi }}</h3>
     <h3>Body Fat %: {{ body_fat }}</h3>
 {% endif %}
-
 {% if graph %}
     <img src="{{ url_for('static', filename=graph) }}" width="400">
 {% endif %}
